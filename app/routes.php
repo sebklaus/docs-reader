@@ -11,7 +11,6 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
-});
+
+Route::get('/docs/{chapter?}', 'DocumentationController@showDocs');
+Route::get('/{chapter?}', 'DocumentationController@showDocs');

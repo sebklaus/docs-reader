@@ -1,0 +1,127 @@
+body
+{
+	font-family:"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+	font-weight:300;
+	font-size:14px;
+}
+
+header
+{
+	border-bottom:1px solid #eee;
+	margin-bottom:2em;
+}
+
+.content footer
+{
+	border-top:1px solid #eee;
+	margin-top:2em;
+	padding-top:1em;
+
+	p
+	{
+		font-size:0.7em;
+		color:#999;
+		margin:0.5em 0;
+		line-height:1em;
+		text-transform:uppercase;
+	}
+}
+
+.wrapper
+{
+	width:840px;
+	margin:3em auto;
+}
+
+.sidebar
+{
+	width:220px;
+	float:left;
+}
+
+.content
+{
+	width:580px;
+	float:right;
+}
+
+a, a:visited
+{
+	color:#349DC7;
+}
+
+.sidebar>ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+
+	ul
+	{
+		list-style-type:none;
+		margin:1em 0;
+		padding:0 0 0 1.5em;
+
+		li
+		{
+			margin:0.3em 0;
+		}
+	}
+}
+
+.content
+{
+	h1:first-child
+	{
+		line-height:1em;
+		margin:0 0 1em 0;
+	}
+
+	p
+	{
+		line-height:1.6em;
+		color:#444;
+		margin:1.5em 0;
+
+		code
+		{
+			background-color:#eee;
+			padding:0.2em 0.5em;
+			font-family: Monaco, Consolas, "Lucida Console", monospace;
+			font-size:0.8em;
+			.box-shadow(2px 2px 0 rgba(0,0,0,0.1));
+		}
+	}
+}
+
+/*
+|--------------------------------------------------------------------------
+| PrettyPrint Styles
+|--------------------------------------------------------------------------
+*/
+
+.prettyprint
+{
+	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	background-color:#333;
+	padding:1.5em;
+	font-size:0.75em;
+	border:0;
+	color:#e9e4e5;
+	line-height:1.9em;
+	.rounded(5px);
+
+	.pln { color: #e9e4e5 }  /* plain text */
+	.str { color: #BCD42A }  /* string content */
+	.kwd { color: #4bb1b1 }  /* a keyword */
+	.com { color: #888 }  /* a comment */
+	.typ { color: #ef7c61 }  /* a type name */
+	.lit { color: #BCD42A }  /* a literal value */
+	.pun, .opn, .clo { color: #fff }  /* punctuation, lisp open bracket, lisp close bracket */
+	.tag { color: #4bb1b1 }  /* a markup tag name */
+	.atn { color: #606 }  /* a markup attribute name */
+	.atv { color: #080 }  /* a markup attribute value */
+	.dec, .var { color: #606 }  /* a declaration; a variable name */
+	.fun { color: red }  /* a function name */
+	code { font-family: Monaco, Consolas, "Lucida Console", monospace; }
+}

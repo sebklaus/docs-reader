@@ -136,6 +136,7 @@ return array(
 		'Lang'       => 'Illuminate\Support\Facades\Lang',
 		'Log'        => 'Illuminate\Support\Facades\Log',
 		'Mail'       => 'Illuminate\Support\Facades\Mail',
+		'Markdown'   => 'dflydev\markdown\MarkdownExtraParser',
 		'Paginator'  => 'Illuminate\Support\Facades\Paginator',
 		'Redirect'   => 'Illuminate\Support\Facades\Redirect',
 		'Redis'      => 'Illuminate\Support\Facades\Redis',

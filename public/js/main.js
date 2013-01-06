@@ -4,6 +4,6 @@
  */
 jQuery(document).ready(function($)
 {
-	$('.documentation pre').addClass('prettyprint');
+	$('.content pre').addClass('prettyprint');
 	prettyPrint();
 });
