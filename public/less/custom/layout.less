@@ -128,6 +128,43 @@ a
 			}
 		}
 	}
+
+	table
+	{
+		width:100%;
+
+		th, td
+		{
+			padding:0.5em;
+			border:1px solid #666;
+			font-size:0.9em;
+		}
+
+		th
+		{
+			background-color:#666;
+			color:#eee;
+			text-align:left;
+		}
+
+		td
+		{
+			border:1px solid #666;
+
+			code
+			{
+				font-size:0.8em;
+				display:block;
+				padding:0.5em 1em;
+				.rounded(0);
+			}
+		}
+
+		tr td:first-child
+		{
+			background-color:#333;
+		}
+	}
 }
 
 /*
