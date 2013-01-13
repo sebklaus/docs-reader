@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Laravel PHP - A framework for web artisans.</title>
+        <title>{{ Config::get('docs.title', 'Documentation') }}</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="{{ path('css/style.css') }}">
@@ -19,7 +19,7 @@
 
         <div class="wrapper">
             <header>
-                <h1>Laravel Four Documentation</h1>
+                <h1>{{ Config::get('docs.title', 'Documentation') }}</h1>
             </header>
             <aside class="sidebar">
                 @yield('sidebar')
@@ -27,8 +27,7 @@
             <section class="content">
                 @yield('content')
                 <footer>
-                    <p>Copyright &copy; {{ date('Y') }} Taylor Otwell.</p>
-                    <p>Template by Dayle Rees.</p>
+                    <p><a href="http://github.com/daylerees/docs-reader" title="Documentation reader by Dayle Rees.">Docs reader</a> by <a href="http://daylerees.com" title="Dayle Rees">Dayle Rees</a>.</p>
                 </footer>
             </section>
             <div class="clearfix"></div>

@@ -1,25 +1,25 @@
 <?php
 
 /**
- * Hande requests for framework documentation.
+ * Hande requests for documentation.
  *
  * @author Dayle Rees <me@daylerees.com>
- * @author Taylor Otwell <taylorotwell@gmail.com>
- * @copyright  Taylor Otwell 2013.
+ * @copyright  Dayle Rees 2013.
+ * @license MIT <http://opensource.org/licenses/MIT>
  */
 class DocumentationController extends Controller {
 
 	public function showDocs($chapter = null)
 	{
 		// Show installation page by default.
-		if ($chapter === null) $chapter = 'installation';
+		if ($chapter === null) $chapter = Config::get('docs.home', 'home');
 
 
 		// Build an array of file stubs to load from disk and
-		// include the documentation listing by default.
+		// include the documentation index by default.
 		$data = array(
 			'chapter'	=> $chapter,
-			'index'		=> 'documentation'
+			'index'		=> Config::get('docs.index', 'documentation')
 		);
 
 		// Laravel promotes best practice, please handle Exceptions
@@ -34,7 +34,8 @@ class DocumentationController extends Controller {
 			// the filesystem and converting it to markdown for display
 			// on the documentation pages.
 			array_walk($data, function(&$raw) use ($markdown) {
-				$raw = File::get(base_path()."/docs/{$raw}.md");
+				$path = base_path().Config::get('docs.path', '/docs');
+				$raw = File::get($path."/{$raw}.md");
 				$raw = $markdown->transformMarkdown($raw);
 			});
 
@@ -50,7 +51,6 @@ class DocumentationController extends Controller {
 		// Show the documentation template, which extends our master template
 		// and provides a documentation index within the sidebar section.
 		return View::make('docs', $data);
-
 	}
 
 }
