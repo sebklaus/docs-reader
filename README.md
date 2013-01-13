@@ -1,14 +1,21 @@
-# Laravel Docs Site
+# Documentation Reader
 
-This is the BETA docs reader application and can be used to easily review the documentation.
+A clean and readable method of providing documentation to your users, built on Laravel 4.
 
-## Setup
+## Installation
 
-- Clone this repo down and point a virtualhost at it's public dir like any other Laravel 4 app.
-- Clone the 'daylerees/laravel-docs' repo into the 'docs' folder at the root of the 'laravel-docs-site' project.
-- Visit the laravel docs site to preview the docs, make changes directly to the source in the DOCS folder ( ON A FEATURE BRANCH ).
-- Tick #2 when you are done, and mention your review branch!
+Write your documentation in markdown, with the filename representing the chapter slug. All files must be in the root of the folder. We recommend versioning your documentation in a separate repository.
 
-If you don't have time for a review then don't panic. Not trying to be bossy :)
+Have a look at `/docs` as the Laravel Framework documentation has been provided for an example.
 
-Thanks for the help!
+Deploy the documentation to the `/docs` directory, or change the `path` configuration within `app/config/docs.php`.
+
+Run `composer install` to install all required dependencies.
+
+Point a virtualhost to the `/public` directory and your documentation should now be visible.
+
+Please see `app/config/docs.php` for additional configuration parameters.
+
+## Enjoy!
+
+Enjoy using the docs reader!
