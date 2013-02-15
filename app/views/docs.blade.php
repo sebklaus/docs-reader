@@ -1,9 +1,9 @@
 @extends('layout/master')
 
 @section('sidebar')
-	{{ $index }}
+	{{{ $index }}}
 @stop
 
 @section('content')
-	{{ $chapter }}
+	{{{ $chapter }}}
 @stop
