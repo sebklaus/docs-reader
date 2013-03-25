@@ -6,7 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ Config::get('docs.title', 'Documentation') }}</title>
+        <title>
+            {{ Config::get('docs.title', 'Documentation') }}
+            @if(!empty($title))
+                : {{ $title }}
+            @endif
+        </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="{{ path('css/style.css') }}">

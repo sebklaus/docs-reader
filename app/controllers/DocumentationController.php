@@ -73,6 +73,8 @@ class DocumentationController extends Controller {
 
 				if(!$foundCurrent)
 					$data['prev'] = $link;
+				else
+					$data['title'] = $link['title'];
 			}
 		}
 
