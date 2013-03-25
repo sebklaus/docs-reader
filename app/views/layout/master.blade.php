@@ -26,6 +26,14 @@
             </aside>
             <section class="content">
                 @yield('content')
+                <nav>
+                @if($prev)
+                    <a href="{{ $prev['URI'] }}" title="Previous: {{ $prev['title'] }}">← {{ $prev['title'] }}</a> |
+                @endif
+                @if($next)
+                    <a href="{{ $next['URI'] }}" title="Next: {{ $next['title'] }}">{{ $next['title'] }} →</a>
+                @endif
+                </nav>
                 <footer>
                     <p><a href="http://github.com/daylerees/docs-reader" title="Documentation reader by Dayle Rees.">Docs reader</a> by <a href="http://daylerees.com" title="Dayle Rees">Dayle Rees</a>.</p>
                 </footer>

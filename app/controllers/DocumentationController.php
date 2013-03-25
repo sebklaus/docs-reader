@@ -48,6 +48,34 @@ class DocumentationController extends Controller {
 
 		}
 
+		// Parse the index to find out the next and previous pages and add links to them in the footer
+		$dom = new DOMDocument();
+		$dom->loadHTML($data['index']);
+
+		$data['prev'] = false;
+		$data['next'] = false;
+		$foundCurrent = false;
+		$data['title'] = '';
+
+		$domLinks = $dom->getElementsByTagName('a');
+		foreach ($domLinks as $domLink) {
+
+			$link['URI'] = $domLink->getAttribute('href');
+			$link['title'] = $domLink->nodeValue;
+			if($foundCurrent)
+			{
+				$data['next'] = $link;
+				break;
+			}
+			else
+			{
+				$foundCurrent = (str_replace(array('docs/','/'), array('',''), $link['URI']) == $chapter);
+
+				if(!$foundCurrent)
+					$data['prev'] = $link;
+			}
+		}
+
 		// Show the documentation template, which extends our master template
 		// and provides a documentation index within the sidebar section.
 		return View::make('docs', $data);
