@@ -12,5 +12,4 @@
 */
 
 
-Route::get('/docs/{chapter?}', 'DocumentationController@showDocs');
-Route::get('/{chapter?}', 'DocumentationController@showDocs');
+Route::get(Config::get('docs.basehref', '/docs/').'{chapter?}', 'DocumentationController@showDocs');
