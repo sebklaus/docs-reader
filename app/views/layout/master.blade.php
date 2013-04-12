@@ -6,7 +6,12 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ Config::get('docs.title', 'Documentation') }}</title>
+        <title>
+            {{ Config::get('docs.title', 'Documentation') }}
+            @if(!empty($title))
+                : {{ $title }}
+            @endif
+        </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <link rel="stylesheet" href="{{ path('css/style.css') }}">
@@ -26,6 +31,14 @@
             </aside>
             <section class="content">
                 @yield('content')
+                <nav>
+                @if($prev)
+                    <a href="{{ $prev['URI'] }}" title="Previous: {{ $prev['title'] }}">← {{ $prev['title'] }}</a> |
+                @endif
+                @if($next)
+                    <a href="{{ $next['URI'] }}" title="Next: {{ $next['title'] }}">{{ $next['title'] }} →</a>
+                @endif
+                </nav>
                 <footer>
                     <p><a href="http://github.com/daylerees/docs-reader" title="Documentation reader by Dayle Rees.">Docs reader</a> by <a href="http://daylerees.com" title="Dayle Rees">Dayle Rees</a>.</p>
                 </footer>
