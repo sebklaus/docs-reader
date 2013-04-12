@@ -56,4 +56,17 @@ return array(
 
 	'home' => 'installation',
 
+	/*
+	|--------------------------------------------------------------------------
+	| Documentation Base Href
+	|--------------------------------------------------------------------------
+	|
+	| This the base href where the documentation is found via http
+	|
+	| Default : '/docs/'
+	|
+	*/
+
+	'basehref' => '/docs/',
+
 );

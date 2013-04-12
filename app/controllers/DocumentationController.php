@@ -69,7 +69,7 @@ class DocumentationController extends Controller {
 			}
 			else
 			{
-				$foundCurrent = (str_replace(array('docs/','/'), array('',''), $link['URI']) == $chapter);
+				$foundCurrent = (str_replace(Config::get('docs.basehref', '/docs/'), '', $link['URI']) == $chapter);
 
 				if(!$foundCurrent)
 					$data['prev'] = $link;
