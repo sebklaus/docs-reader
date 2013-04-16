@@ -14,8 +14,8 @@
         </title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link rel="stylesheet" href="{{ path('css/style.css') }}">
-        <script src="{{ path('js/vendor/modernizr-2.6.2.min.js') }}"></script>
+        <link rel="stylesheet" href="{{ url('css/style.css') }}">
+        <script src="{{ url('js/vendor/modernizr-2.6.2.min.js') }}"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -47,10 +47,10 @@
         </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="{{ path('js/vendor/jquery-1.8.2.min.js') }}"><\/script>')</script>
-        <script src="{{ path('js/vendor/prettify.js') }}"></script>
-        <script src="{{ path('js/plugins.js') }}"></script>
-        <script src="{{ path('js/main.js') }}"></script>
+        <script>window.jQuery || document.write('<script src="{{ url('js/vendor/jquery-1.8.2.min.js') }}"><\/script>')</script>
+        <script src="{{ url('js/vendor/prettify.js') }}"></script>
+        <script src="{{ url('js/plugins.js') }}"></script>
+        <script src="{{ url('js/main.js') }}"></script>
 
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
