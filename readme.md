@@ -10,10 +10,6 @@ Laravel 4 and Laravel 4 Framework related issues and pull requests should be dir
 
 Laravel 4 Documentation related issues and pull requests should be directed to the [laravel/docs](http://github.com/laravel/docs) repository!
 
-<<<<<<< HEAD
 ## License
 
 This software and the Laravel framework is open-sourced software license under the [MIT license](http://opensource.org/licenses/MIT)
-=======
-The Laravel framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
->>>>>>> laravel/develop
