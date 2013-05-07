@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-=======
 /bootstrap/compiled.php
->>>>>>> refs/remotes/laravel/develop
 /vendor
 composer.phar
 composer.lock
