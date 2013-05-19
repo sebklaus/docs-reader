@@ -63,12 +63,18 @@
             <section class="content">
                 @yield('content')
                 <nav>
+                    <ul class="pager">
                 @if($prev)
-                    <a href="{{ $prev['URI'] }}" title="Previous: {{ $prev['title'] }}">← {{ $prev['title'] }}</a> |
+                      <li>
+                        <a href="{{ $prev['URI'] }}" title="Previous: {{ $prev['title'] }}">&larr; {{ $prev['title'] }}</a>
+                      </li>
                 @endif
                 @if($next)
-                    <a href="{{ $next['URI'] }}" title="Next: {{ $next['title'] }}">{{ $next['title'] }} →</a>
+                      <li>
+                        <a href="{{ $next['URI'] }}" title="Next: {{ $next['title'] }}">{{ $next['title'] }} &rarr;</a>
+                      </li>
                 @endif
+                    </ul>
                 </nav>
             </section>
         </div>
