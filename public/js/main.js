@@ -14,4 +14,6 @@ jQuery(document).ready(function($)
     $('aside.sidebar li em').contents().unwrap().parent().addClass('divider');
     // Remove <strong> tag and add nav-header class to its parent
     $('aside.sidebar li strong').contents().unwrap().parent().addClass('nav-header').prepend('<i class="icon-folder-open"></i>');
+    // Open all external links in a new window/ tab
+    $('a[href^="http://"]').attr({target:"_blank", title:"Opens in a new window"});
 });
