@@ -1,7 +1,8 @@
-- Preface
+- **Preface**
     - [Introduction](/introduction)
     - [Contributing](/contributing)
-- Getting Started
+- *&nbsp;*
+- **Getting Started**
     - [Installation](/installation)
     - [Configuration](/configuration)
     - [Request Lifecycle](/lifecycle)
@@ -10,7 +11,8 @@
     - [Views & Responses](/responses)
     - [Controllers](/controllers)
     - [Errors & Logging](/errors)
-- Learning More
+- *&nbsp;*
+- **Learning More**
     - [Cache](/cache)
     - [Events](/events)
     - [IoC Container](/ioc)
@@ -24,15 +26,18 @@
     - [Templates](/templates)
     - [Unit Testing](/testing)
     - [Validation](/validation)
-- Database
+- *&nbsp;*
+- **Database**
     - [Basic Usage](/database)
     - [Query Builder](/queries)
     - [Eloquent ORM](/eloquent)
     - [Schema Builder](/schema)
     - [Migrations & Seeding](/migrations)
     - [Redis](/redis)
-- Artisan CLI
+- *&nbsp;*
+- **Artisan CLI**
     - [Overview](/artisan)
     - [Development](/commands)
-- Advanced Topics
+- *&nbsp;*
+- **Advanced Topics**
     - [Architecture](#)
