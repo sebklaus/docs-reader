@@ -1,6 +1,6 @@
 <?php
 
-use \dflydev\markdown\MarkdownParser as Markdown;
+use \dflydev\markdown\MarkdownExtraParser as Markdown;
 
 /**
  * Hande requests for documentation.

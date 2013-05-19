@@ -16,4 +16,6 @@ jQuery(document).ready(function($)
     $('aside.sidebar li strong').contents().unwrap().parent().addClass('nav-header').prepend('<i class="icon-folder-open"></i>');
     // Open all external links in a new window/ tab
     $('a[href^="http://"]').attr({target:"_blank", title:"Opens in a new window"});
+    // Make tables look nice
+    $('.content table').addClass('table table-striped table-condensed table-bordered');
 });
