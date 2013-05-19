@@ -41,7 +41,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="/"><i class="icon-puzzle-piece"></i> docs-reader</a>
+          <a class="brand" href="/"><i class="icon-puzzle-piece"></i> Docs reader</a>
         </div>
       </div>
     </div>
