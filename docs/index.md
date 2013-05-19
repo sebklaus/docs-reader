@@ -3,7 +3,7 @@
     - [Contributing](/contributing)
 - *&nbsp;*
 - **Getting Started**
-    - [Installation](/installation)
+    - [Installation](/home)
     - [Configuration](/configuration)
     - [Request Lifecycle](/lifecycle)
     - [Routing](/routing)
