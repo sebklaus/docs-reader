@@ -4,6 +4,10 @@
  */
 jQuery(document).ready(function($)
 {
-	$('.content pre, table code').addClass('prettyprint');
-	prettyPrint();
+    // Make code look nice
+    $('.content pre, table code').addClass('prettyprint');
+    prettyPrint();
+    // Add Twitter Bootstrap related classes to HTML tags
+    $('aside.sidebar ul').addClass('nav nav-list');
+    $('.content blockquote').addClass('alert alert-info');
 });

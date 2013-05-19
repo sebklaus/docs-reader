@@ -41,6 +41,9 @@ class DocumentationController extends Controller {
 				$raw = $markdown->transformMarkdown($raw);
 			});
 
+			// Get date of last file change
+			$data['time'] = date("d/m/Y h:i:s a", filemtime(base_path().Config::get('docs.path', '/docs')."/{$chapter}.md"));
+
 		}
 		catch (Exception $e) {
 
