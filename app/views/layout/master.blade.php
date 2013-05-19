@@ -81,8 +81,10 @@
     </div>
     <div class="row-fluid">
          <div class="span12">
-            <footer>
-              Document last updated: <strong>{{ $time }}</strong> | <a href="http://github.com/daylerees/docs-reader" title="Documentation reader by Dayle Rees.">Docs reader</a> by <a href="http://daylerees.com" title="Dayle Rees">Dayle Rees</a>.
+            <footer class="well well-small">
+              <div  class="offset3">
+                Document last updated: <div class="label">{{ $time }}</div><span class="pull-right">Based on <a href="http://github.com/daylerees/docs-reader" title="Documentation reader by Dayle Rees.">Docs reader</a> by <a href="http://daylerees.com" title="Dayle Rees">Dayle Rees</a>.</span>
+              </div>
             </footer>
         </div>
     </div>
