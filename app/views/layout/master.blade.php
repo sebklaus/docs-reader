@@ -17,7 +17,7 @@
     <meta name="author" content="">
     <link media="all" type="text/css" rel="stylesheet" href="{{ url('css/bootstrap.css') }}">
     <!--[if lt IE 9]>
-      <script src="{{ url('js/html5.min.js') }}"></script>
+      <script src="{{ url('js/vendor/html5.min.js') }}"></script>
       <link media="all" type="text/css" rel="stylesheet" href="{{ url('css/font-awesome-ie7.css') }}">
       <link media="all" type="text/css" rel="stylesheet" href="{{ url('css/ie678.css') }}">
     <![endif]-->
