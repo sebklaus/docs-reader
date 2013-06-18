@@ -15,4 +15,6 @@ jQuery(document).ready(function($)
     $('aside.sidebar li strong').contents().unwrap().parent().addClass('nav-header').prepend('<i class="icon-folder-open"></i>');
     // Open all external links in a new window/ tab
     $('a[href^="http://"], a[href^="https://"]').attr({target:"_blank", title:"Opens in a new window"});
+    // Mark current site as "active" in sidebar
+    $('a[href="' + window.location.pathname + '"]').parent().addClass("active");
 });
